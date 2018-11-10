@@ -8,6 +8,7 @@ function addName(event) {
     if (event.which === 13) {
         const p = document.createElement('p');
         if (input.value.length === 0) {
+            p.classList.add('red');
             p.innerText = `The text field is empty. Please enter name.`;
         }
         else {
