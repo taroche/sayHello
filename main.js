@@ -6,19 +6,16 @@ input.addEventListener('keypress', addName);
 
 function addName(event) {
     if (event.which === 13) {
+        const p = document.createElement('p');
         if (input.value.length === 0) {
-            const p = document.createElement('p');
             p.innerText = `The text field is empty. Please enter name.`;
-             const form = document.querySelector('form');
-             form.append(p);
         }
         else {
-            const p = document.createElement('p');
-            p.innerText = `Hello ${input.value}, nice to meet you!`;
-            const form = document.querySelector('form');
-            form.append(p);
-            form.reset(); 
+            p.innerText = `Hello ${input.value}, nice to meet you!`; 
         } 
-        event.preventDefault(); 
+        const form = document.querySelector('form');
+        form.append(p);
+        event.preventDefault();
+        form.reset(); 
    }
 }
