@@ -3,7 +3,6 @@ const input = document.querySelector('input');
 
 input.addEventListener('keypress', addName);
 
-
 function addName(event) {
     if (event.which === 13) {
         const p = document.createElement('p');
