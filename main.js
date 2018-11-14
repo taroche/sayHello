@@ -7,10 +7,11 @@ function addName(event) {
     if (event.which === 13) {
         const p = document.createElement('p');
         if (input.value.length === 0) {
-            p.classList.add('red');
+            p.classList.add('color');
             p.innerText = `The text field is empty. Please enter name.`;
         }
         else {
+            p.classList.add('hello');
             p.innerText = `Hello ${input.value}, nice to meet you!`; 
         } 
         const article = document.querySelector('article');
