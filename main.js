@@ -17,6 +17,8 @@ function addName(event) {
         const form = document.querySelector('form');
         article.prepend(p);
         event.preventDefault();
-        form.reset(); 
+        form.reset();
+        var remove = document.querySelector('article');
+        remove.removeChild(remove.childNodes[5]);
    }
 }
