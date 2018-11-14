@@ -13,8 +13,9 @@ function addName(event) {
         else {
             p.innerText = `Hello ${input.value}, nice to meet you!`; 
         } 
+        const article = document.querySelector('article');
         const form = document.querySelector('form');
-        form.append(p);
+        article.prepend(p);
         event.preventDefault();
         form.reset(); 
    }
