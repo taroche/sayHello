@@ -1,3 +1,29 @@
-.red {
+body, h1,, p,  {
+    margin: 0;
+    padding: 0;
+}
+body {
+    border-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+h1 {
+    font-size: 5em;
+}
+.hello {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.color {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;
 }
+fieldset {
+    border: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  } 
+  form {
+    margin: 3em 0;
+  }
